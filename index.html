@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body>
+<h2>My Family Book</h2>
+<img id="images"src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg">
+<h1 id="name">My Beautiful World</h1>
+<button onclick="nextslide()">Next</button>
+<script>
+var names=[
+"My Beautiful World" ,
+"Me" ,
+"My Sister" ,
+"My Father" ,
+"My Mother"
+];
+var slideshow=[
+"https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg" ,
+"https://wallpaperaccess.com/full/3033241.jpg" ,
+"https://p.favim.com/orig/2019/02/04/cool-anim-cool-anime-girl-Favim.com-6870903.jpg" ,
+"https://us.123rf.com/450wm/studiostoks/studiostoks1607/studiostoks160700363/60251372-super-dad-hero-with-a-joyful-smile-pop-art-retro-vector-illustration.jpg?ver=6" ,
+"https://www.crushpixel.com/big-static18/preview4/mother-multitasking-working-3000552.jpg"
+];
+function nextslide(){
+var i= 0;
+document.getElementById("images").src=slideshow[i];
+document.getElementById("name").inner.HTML=names[i];
+i++;
+if (i == 5) 
+{
+i=0;
+}
+}
+</script>
+</body>
+</html>
